@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:7_segment_display-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -145,17 +146,6 @@ Text Label 2600 3300 0    50   ~ 0
 RCLK
 Wire Wire Line
 	2600 3300 2900 3300
-$Comp
-L Display_Character:SBC18-11SURKCGKWA U2
-U 1 1 5CD9443F
-P 7650 2500
-F 0 "U2" H 7650 3167 50  0000 C CNN
-F 1 "SBC18-11SURKCGKWA" H 7750 3100 50  0000 C CNN
-F 2 "lib_fp:5611BH" H 6920 1790 50  0001 L CNN
-F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/SBC18-11SURKCGKWA(Ver.6A).pdf" H 7650 2690 50  0001 L CNN
-	1    7650 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3700 2800 4200 2800
 Wire Wire Line
@@ -556,4 +546,15 @@ F 3 "~" H 2000 4850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2000 4800 2000 4850
+$Comp
+L lib_sch:5611BH_7_Segment_Display_Common_Cathode U2
+U 1 1 5CD9E98C
+P 7650 2250
+F 0 "U2" H 7650 2667 50  0000 C CNN
+F 1 "5611BH_7_Segment_Display_Common_Cathode" H 7650 2576 50  0000 C CNN
+F 2 "lib_fp:5611BH" H 7650 2700 50  0001 C CNN
+F 3 "" H 7650 2700 50  0001 C CNN
+	1    7650 2250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
